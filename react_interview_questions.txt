@@ -1,0 +1,588 @@
+Interview Preparation 
+<<<<<<<<<<>>>>>>>>>>>>
+
+1)What is ReactJS?
+
+2)Advantages of ReactJS?
+
+3)What is JSX? 
+
+4)What is React Fragment?
+
+5)What is React Component?
+
+6)Function component vs Class component?
+
+7)Write a program on function component and class component?
+
+8)Real DOM vs Virtual DOM
+
+9) props vs state 
+
+10) var vs let vs const 
+
+11) Phases of react component?
+
+12) Life cycle method in react?
+
+13) What is Hook?
+
+14) What is react router?
+
+15) What is SPA?
+
+16) What is React event handling?
+
+17) What is React redux?
+
+18) Render vs Re-Render?
+
+19) What is Reconciliation?
+
+20) What is map() function?
+
+21) What is filter() function?
+
+22) What is reducer() function?
+
+23) Controlled component vs Uncontrolled component (forms)    
+
+
+
+Questions and Answers 
+========================
+
+1) What is React/ReactJS?
+
+It is a declarative, efficient and flexible javascript frontend library responsible for building frontend applications or User interfaces(UI).
+
+It is an open source, component based frontend library responsible only for view layer of the application.
+
+It was developed by Jordan Walke who was a software engineer at Facebook.
+
+
+2)Advantages of React/ReactJS ?
+
+1) It is easy to learn and easy to use.
+
+2) It supports one way data binding.
+
+3) It supports Virtual DOM.
+
+4) It supported by all major browsers.
+
+5) It creates reusable components.
+
+6) Good Documentation and Community support.
+
+
+3)What is JSX ?
+
+JSX stands for JavaScript XML.
+
+JSX allows us to write HTML in React.
+
+JSX tags having a tagname, attributes and children.
+
+JSX is  necessity to write React applications.
+
+JSX makes your react code simpler and elegant.
+
+JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
+
+
+
+4)What is React Fragment ?
+
+Fragment is used to group of list of childrens without adding extra nodes of the DOM.
+
+In general, We can return only one element at a time but we can't return more then one element directly.
+
+To return more then one element we need to use React Fragment.
+ex:
+	<>
+		-
+		-
+	</>
+
+
+
+
+5) What is React Components?
+
+Components are Building blocks of any React app.
+
+Component allows us to split UI into independent reusable pieces.
+ex:
+	navbar, header, footer , body and etc.
+
+Components are like Javascript functions.They accept arbitrary inputs called "props" and return React Element describing what should appears on the screen.
+
+A Component name always starts with capital letter.
+
+we can create react component in two ways.
+
+1)Function Component /functional component
+
+2)Class Component
+
+
+6)Difference between function component vs class component?
+
+function component			class component
+------------------			----------------
+It is also known as stateless 		It is a statefull component.
+component.
+
+In a function component we will use	In a class component we will use 
+return keyword.				render() method.
+
+It supports hooks.			It does not support hooks.
+
+Constructor is not used.		Constructor is used.
+
+
+7)Write a program on function component and class component?
+
+function component
+--------------------
+function App()
+{
+	return(
+		<h1>Function component</h1>
+	)
+}
+export default App;
+
+class component
+--------------
+import {Component} from 'react';
+export default class App extends Component
+{
+	render()
+	{
+		return(
+			<h1>Class Component</h1>
+		)
+	}
+}
+
+
+
+
+8)Difference between real dom vs virtual dom ?
+
+Real dom 				virtual dom 
+-----------				--------------
+It updates slow.			It updates faster.
+
+Can directly updates HTML.		Can't directly updates HTML.
+
+Creates a new dom if element updates.	Update the jsx if element updates.
+
+DOM manipulation is very expensive.	DOM manipulation is very easy.
+
+Too much of memory wastage.		No memory wastage.
+
+
+
+
+9)What is event handling in react?
+
+Action to which a javascript can respond is called event.
+ex:
+	clicking on button
+	hovering of an element
+	and etc.
+
+Handling events on react Elements are same like handling events on DOM elements.
+
+ex:
+
+Javascript
+-----------
+
+	<button  onclick="f1()">clickMe</button
+
+React
+------
+	<button onClick={handleClick}>clickMe</button>  --> Function component 
+
+	<button onClick={this.handleClick}>clickMe</button>  --> Class component 
+
+
+
+10)Difference between props and state ?
+
+props						state
+----------					---------
+Props are read-only.				States are updatable.
+
+Props are immutable.				State is mutable.
+
+
+Props allow us to pass data from one 		State holds information 
+component to other components as an argument.   about the components.
+
+
+Props can be accessed by the child component.	State cannot be accessed by 								child components because it is 
+						private.
+
+Stateless component can have Props.		Statefull components can have state.
+
+
+
+
+
+
+11) Phases of ReactJS component ?
+
+There are four Phases of components in ReactJS.
+
+1)Mounting
+
+2)Updating
+
+3)Error Handling
+
+4)Unmounting
+
+
+1)Mounting
+-----------
+Mounting is a process of creating an element and inserting it in a DOM tree.
+
+
+2)Updating
+-------------
+Updating is a process of changing state or props of a component and update changes to nodes already existing in the DOM.
+
+3)Error Handling
+----------------
+Error Handling used when there is a error during rendering ,in lifecycle
+method or in the constructor of any child component.
+
+
+4)Unmounting 
+---------------
+Unmounting is a process of removing components from the DOM.
+In general it will clear the reserved memory.
+
+
+12)Explain life cycle methods of mounting ?
+
+ Mounting phase contains four methods.
+ 1) constructor
+ 2) getDerivedStateFromProps
+ 3) render()
+ 4) coumponentDidMount() 
+
+
+13)Explain life cycle methods of unmounting?
+
+ Unmounting phase contains one method.
+
+ 1) componentWillUnmount()
+
+
+
+14)Explain life cycle methods of updating?
+
+  updating phase contains five methods.
+  1) getDerivedStateFromProps
+  2) shouldComponentUpdate()
+  3) render()
+  4) getSnapshotBeforeUpdate()
+  4) ComponentDidUpdate() 	
+
+
+
+15)What is Hooks?
+
+Hooks allow us to access  state , lifecycle methods and other React features in a function component..
+
+React provides a few built-In hooks like useState,useEffect and etc.
+
+
+
+16)What is React Router?
+
+React Router is a standard library system built on top of the React and used to 
+create routing in the React application using React Router Package.
+
+ReactJS Router is mainly used for developing Single Page Web Applications. 
+
+
+17)What is SPA?
+A Single Page Application (SPA) is a single web page, website, or web application that works within a web browser and loads just a single document. It does not need page reloading during its usage.
+
+----------------------------------------------------------------------
+
+1)Write a javascript program to display 1 to 100 prime numbers ?
+
+		let count=0
+		let i,j 
+		for(j=2;j<=100;j++)
+		{
+			for( i=1;i<=j;i++)
+			{
+  				if(j%i==0)
+  				count++
+  			}
+
+			if(count==2)
+			{
+				console.log(j)
+			}
+			count=0
+		}
+
+
+2) Difference between render and re-render ?
+
+Render refers to rendering the content for the initial load. 
+
+Re-render refers to re-rendering the content upon updating of props.
+
+
+
+3)What is map() method ?
+
+The map() method is used for traversing or displaying the list of similar objects of a component. 
+
+ex:
+	var arr = [10,20,30];   
+	const result = arr.map((element)=>{   
+    	return (element + 10);   
+	});   
+	console.log(result);  
+
+
+
+4)What is filter() method ?
+
+The filter() method is an iterative method. 
+
+It calls a provided callbackFn function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a truthy value. 
+
+ex:
+	const ages = [32, 33, 16, 40];
+	const result = ages.filter(checkAdult);
+	document.writeln(result);
+
+	function checkAdult(age) {
+  		return age >= 18;
+	}
+
+
+5)What is reduce() method?
+
+The reduce() method executes a reducer function for array element. The reduce() method returns a single value: the function's accumulated result.
+
+ex:
+	const numbers = [175, 50, 25];	
+	var result=numbers.reduce(myFunc);
+	document.writeln(result);
+
+	function myFunc(total, num) {
+  		return total + num;
+	}
+
+
+6)What is Reconciliation?
+
+Reconciliation is the process by which React updates the UI to reflect changes in the component state. 
+
+The reconciliation algorithm is the set of rules that React uses to determine how to update the UI in the most efficient way possible. React uses a virtual DOM (Document Object Model) to update the UI.
+
+
+7)What is Redux?
+
+Redux is a pattern and library for managing and updating application state 
+using events called actions. 
+
+React uses Redux for building the user interface. 
+
+It servers as a centralized store for the state that needs to be used across your 
+entire application, with the rules ensuring that the state can only be updated in a predictable fashion.
+
+We have three components in react redux.
+
+1)STORE
+2)ACTION
+3)REDUCER 
+
+
+8)What is react form?
+
+React offers a stateful, reactive approach to build a form. 
+
+In React, form data is usually handled by the components.
+
+There are mainly two types of form input in React.
+
+1)controlled component
+2)UnControlled component
+
+In React, the form is usually implemented by using controlled components.
+
+
+9)What is DOM manipulation?
+
+It is the process of interacting with the DOM API to change or modify an HTML document that will be displayed in a web browser. 
+
+DOM manipulation is when we use JavaScript to add, remove, and modify elements of a website. 
+
+
+10) How to combine two arrays using spread operator?
+
+	const arr1=[1,2,3,4,5];
+	const arr2=[6,7,8,9,10];
+	const result=[...arr1,...arr2];
+	document.writeln(result);	
+
+
+11) Write a javascript program to find out fibonacci series of a given number?
+
+			var n=5;
+
+			var a=0,b=1,c;
+
+			document.writeln(a+" "+b+" ");
+
+			for(var i=2;i<=n;i++)
+			{
+					c=a+b;
+					document.writeln(c+" ");
+					a=b;
+					b=c;
+			}
+
+
+12)Write a javascript program to find out reverse of a given string?
+
+	var str="hello";
+	var carr=str.split('').reverse().join("");
+	document.writeln(carr);
+
+
+13) How to declare a state in react?
+
+There are two ways are there two declare the state.
+
+1)Inside the class 
+
+2)Inside the constructor 
+
+
+1)Inside the class 
+---------------
+import {Component} from "react";
+
+export default class App extends Component
+{
+	state={
+	
+		name: "Alan"
+	}	
+	render()
+	{
+		return(
+			<h1>My Name : {name}</h1>	
+		)
+	}
+}
+
+
+2)Inside the constructor 
+--------------------
+import {Component} from "react";
+
+export default class App extends Component
+{
+	constructor(props)
+	{
+		super(props);
+
+		this.state={
+			name: "Alan"
+		}
+	}	
+	render()
+	{
+		return(
+			<h1>My Name : {name}</h1>	
+		)
+	}
+}
+
+
+12)How to declare a props in react?
+
+index.js
+-------
+	<App  name="Alan"/> 
+
+App.js 
+------
+function App(props)
+{
+	return(
+		<h1>My Name : {props.name}</h1>
+	)
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
